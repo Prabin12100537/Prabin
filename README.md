@@ -21,11 +21,11 @@ namespace SydneyHotel
         static double Price(int night, string isRoomService)
         {
             double price = 0;
-            if((night > 0 )&& (night <= 3))
+            if((night > 0 )&& (night <= 5))
                 price = 100*night; 
-            else if((night > 3 )&& (night <= 10))
+            else if((night > 3 )&& (night <= 20))
                 price = 80.5*night; 
-            else if((night > 10 )&& (night <= 20))
+            else if((night > 10 )&& (night <= 30))
                 price = 75.3*night;
             //roomservice should be checked to lower yes
             if(isRoomService.ToLower()=="yes")
